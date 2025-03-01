@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Christopher Haddad\\source\\repos\\Simple 2D Scene\\",
+  "WorkspaceRootPath": "C:\\Users\\Christopher Haddad\\Desktop\\CS3113\\Simple 2D Scene\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2EA7A33-B522-4E25-875C-2465FF529C7F}|Simple 2D Scene.vcxproj|C:\\Users\\Christopher Haddad\\source\\repos\\Simple 2D Scene\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F2EA7A33-B522-4E25-875C-2465FF529C7F}|Simple 2D Scene.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Christopher Haddad\\Desktop\\CS3113\\Simple 2D Scene\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,13 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Christopher Haddad\\source\\repos\\Simple 2D Scene\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\Christopher Haddad\\Desktop\\CS3113\\Simple 2D Scene\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\Christopher Haddad\\source\\repos\\Simple 2D Scene\\main.cpp",
+              "ToolTip": "C:\\Users\\Christopher Haddad\\Desktop\\CS3113\\Simple 2D Scene\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAOEAAAAAAAAAAAAewOUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-11T18:41:00.497Z",
+              "WhenOpened": "2025-02-15T07:12:30.023Z",
               "EditorCaption": ""
             }
           ]
