@@ -31,5 +31,16 @@
 *.out
 *.app
 
+# Build folders
+Debug/
+Release/
+
+# Visual Studio files
+*.suo
+*.user
+*.log
+*.pdb
+.vs/
+
 *.ipch
 *.db
