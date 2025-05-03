@@ -1,0 +1,92 @@
+#pragma once
+#define GL_SILENCE_DEPRECATION
+
+#ifdef _WINDOWS
+#include <GL/glew.h>
+#endif
+
+#define GL_GLEXT_PROTOTYPES 1
+#include <SDL_mixer.h>
+#include <SDL.h>
+#include <SDL_opengl.h>
+#include "glm/mat4x4.hpp"
+#include "glm/gtc/matrix_transform.hpp"
+#include "ShaderProgram.h"
+#include "Utility.h"
+#include "Entity.h"
+#include "Map.h"
+
+/**
+    Notice that the game's state is now part of the Scene class, not the main file.
+*/
+struct GameState
+{
+    // ————— GAME OBJECTS ————— //
+    Map *map;
+    Entity *player;
+    Entity *enemies;
+    Entity* starters;
+    std::string chosen_starter;
+    Entity* ash;
+    Entity* cyrus;
+    Entity* textbox;
+    Entity* textbox_lose;
+    Entity* textbox_win;
+
+    Entity* dirt;
+    Entity* ground;
+    Entity* ground2;
+
+    Entity* electivire;
+	Entity* snorlax;
+    Entity* gliscor;
+    Entity* garchomp;
+    Entity* froakie;
+    Entity* treecko;
+    Entity* chimchar;
+    Entity* rayquaza;
+
+    bool win = false;
+    bool rayquaza_caught = false;
+
+
+
+    std::vector<Entity*> party;
+    std::vector<Entity*> catchables;
+
+   
+
+
+
+    // ————— AUDIO ————— //
+    Mix_Music *bgm;
+    Mix_Chunk *jump_sfx;
+    Mix_Chunk* tap_sfx;
+    //Mix_Chunk* win_sfx;
+	Mix_Chunk* lose_sfx;
+
+    Mix_Chunk* catch_sfx;
+    Mix_Chunk* win_sfx;
+    
+    // ————— POINTERS TO OTHER SCENES ————— //
+    int next_scene_id;
+};
+
+class Scene {
+protected:
+    GameState m_game_state;
+    
+public:
+    // ————— ATTRIBUTES ————— //
+    int m_number_of_enemies = 1;
+    
+    // ————— METHODS ————— //
+    virtual void initialise() = 0;
+    virtual void update(float delta_time) = 0;
+    virtual void render(ShaderProgram *program) = 0;
+    
+    // ————— GETTERS ————— //
+    GameState const get_state() const { return m_game_state;}
+    GameState& get_state() { return m_game_state; }
+    int const get_number_of_enemies() const { return m_number_of_enemies; }
+};
